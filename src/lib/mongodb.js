@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'; // Import the mongoose library to interact with MongoDB
 
 const MONGODB_URI = process.env.MONGODB_URI; // Pull the secret connection string from the .env.local file
-
+console.log("URI:", MONGODB_URI);
 if (!MONGODB_URI) { // Check if the connection string is missing from the environment
   throw new Error('Please define the MONGODB_URI environment variable'); // Stop the app and show a helpful error if missing
 }
