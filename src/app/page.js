@@ -93,6 +93,10 @@ export default function TodoPage() {
       console.error("Failed to edit:", error)
     }
   }
+// Local-only delete (does not call backend)
+const deleteTodoLocal = (id) => {
+  setTodos(todos.filter((t) => t._id !== id));
+};
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center py-12 px-4">
@@ -149,11 +153,12 @@ export default function TodoPage() {
                           Edit
                         </button>
                         <button
-                          onClick={() => deleteTodo(todo._id)}
-                          className="text-slate-400 hover:text-red-500 text-sm font-bold"
-                        >
-                          Delete
-                        </button>
+  onClick={() => deleteTodoLocal(todo._id)}
+  className="text-slate-400 hover:text-red-500 text-sm font-bold"
+>
+  Delete
+</button>
+
                       </div>
                     </div>
 

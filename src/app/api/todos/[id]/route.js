@@ -24,3 +24,4 @@ export async function PATCH(request, { params }) { // Handler for updating (part
     return NextResponse.json({ success: false, error: error.message }, { status: 400 }); // Return error
   }
 }
+
