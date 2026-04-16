@@ -19,6 +19,10 @@ export default function ContactPage() {
         Fill out the form below or send us an email directly. We’ll make sure
         your query reaches the right person and gets the attention it deserves.
       </p>
+      <br></br>
+      <p className="text-slate-700 max-w-2xl text-center">
+        <b>Contact us for more quaries.</b>
+      </p>
     </div>
   )
 }
