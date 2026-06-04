@@ -13,14 +13,7 @@ export default function CompanyPage() {
         online marketplace.
       </p>
 
-      <p className="text-slate-700 max-w-3xl text-center mb-6">
-        Over the years, we have collaborated with startups, small businesses, 
-        and established enterprises to design marketing strategies that truly 
-        make an impact. From social media management and SEO optimization to 
-        content creation and paid advertising, our services are tailored to 
-        meet diverse business needs. We believe that success comes from 
-        consistency, creativity, and a customer-first approach.
-      </p>
+      
 
       <h2 className="text-2xl font-semibold text-green-500 mt-8 mb-4">Our Core Values</h2>
       <table className="table-auto border-collapse border border-slate-400 text-slate-700">
@@ -51,9 +44,7 @@ export default function CompanyPage() {
           </tr>
           <tr>
             <td className="border border-slate-400 px-4 py-2">Collaboration</td>
-            <td className="border border-slate-400 px-4 py-2">
-              Working together as a team and with our clients ensures the best outcomes.
-            </td>
+        
           </tr>
         </tbody>
       </table>
